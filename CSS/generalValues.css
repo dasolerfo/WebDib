@@ -1,0 +1,13 @@
+:root {
+    --fons: #F3F3E0;
+    --colorPrincipal: #133E87;
+    --colorSecundari: #608BC1;
+    --colorTersiari: #CBDCEB;
+    --fontTitols: 'Roboto', sans-serif;
+    --fontSizeTitols: 36px;
+    --fontTitols2: 'Roboto';
+    --fontSizeTitols2: 28px;
+    --fontText: 'Roboto', sans-serif;
+    --fontSizeText: 16px
+}
+

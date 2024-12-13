@@ -1,0 +1,117 @@
+.capsalera {
+    z-index: 3;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+   
+    background: transparent;/*var(--colorPrincipal); /*linear-gradient(to right, #414345, #232526);*/
+    position: fixed; 
+}
+
+
+#capsalera{
+    transition: opacity 0.5s ease, background-color 0.5s ease;
+}
+
+.capsaleraColor{
+    transition: opacity 0.5s ease !important;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, var(--colorSecundari), var(--colorPrincipal)); /*linear-gradient(to right, #414345, #232526);*/
+    opacity: 1;
+}
+
+
+.capsaleraTransparent{
+    transition: opacity 0.5s ease !important;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, var(--colorSecundari), var(--colorPrincipal));
+    opacity: 0;
+}
+
+#logo1 {
+    margin-left: 15px;
+    height: 35px; 
+    width: auto;
+}
+
+.botoCapsalera {
+    text-align: center;
+    width: 160px;
+    margin:0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+    padding: 20px;
+    background-color: transparent;
+    display: inline-block;
+}
+
+.botoCapsalera:hover {
+    background-color: white;
+    color: #282828;
+}
+
+.menu-icon {
+    padding: 15px;
+    font-size: 30px;
+    cursor:pointer;
+    color: white;
+    display: none;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu.active {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none; 
+        position: absolute;
+        z-index: 3;
+        top: 60px;
+        right: 0;
+        background: linear-gradient(to right, var(--colorSecundari), var(--colorPrincipal)); 
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); 
+    }
+
+    .menu.active {
+        display: flex; 
+    }
+
+    .botoCapsalera {
+        font-size: large;
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        background-color: transparent;
+        border-bottom: 1px solid white;
+        transition: all 0.3s ease-in-out;
+        
+    }
+
+    .botoCapsalera:hover {
+        background-color: white;
+        color: #282828;
+    }
+
+    .menu-icon {
+        display: block; 
+    }
+}
